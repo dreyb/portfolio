@@ -38,6 +38,7 @@ nav {
   box-shadow: 2px 2px 2px var(--sombra);
   position: fixed;
   width: 100%;
+  z-index: 100;
 }
 
 #logo {

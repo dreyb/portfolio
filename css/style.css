@@ -1,3 +1,15 @@
+/*Importação das fontes*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/*Variáveis*/
+:root {
+  --cor-principal: #c5952a;
+  --cor-secundaria: black;
+  --cor-terciária: white;
+  --sombra: rgba(0, 0, 0, 0.199);
+  --fonte-1: "Roboto", sans-serif;
+}
+
 /*Configuração geral*/
 * {
   margin: 0;
@@ -8,5 +20,56 @@
 main {
   background: url("../img/background.jpg") no-repeat center center;
   background-size: cover;
-  height: 92vh;
+  height: 100vh;
+}
+
+/*Divs da home*/
+#textos-home {
+  width: 80%;
+  height: 400px;
+  position: relative;
+  top: 150px;
+  left: 5%;
+}
+
+#textos-home div {
+  background-color: var(--cor-terciária);
+  width: 200px;
+  height: 300px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px var(--sombra);
+  font-family: var(--fonte-1);
+  color: var(--cor-principal);
+}
+
+#textos-home div > h1 {
+  text-align: center;
+  position: relative;
+  top: 20px;
+}
+
+#textos-home div > ul {
+  list-style: circle;
+  margin-left: 25px;
+  font-size: 14px;
+  margin-top: 60px;
+}
+
+#textos-home div > img {
+  position: relative;
+  left: 30%;
+  top: 10%;
+}
+
+/*Responsividade dessas divs*/
+@media (max-width: 700px) {
+  #textos-home {
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  #textos-home div {
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
