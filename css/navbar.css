@@ -21,6 +21,7 @@ a {
   color: var(--cor-principal);
   text-decoration: none;
   transition: 0.3s;
+  text-shadow: 2px 2px 2px var(--sombra);
 }
 
 a:hover {
@@ -35,6 +36,8 @@ nav {
   background: var(--cor-terciária);
   height: 8vh;
   box-shadow: 2px 2px 2px var(--sombra);
+  position: fixed;
+  width: 100%;
 }
 
 #logo {
