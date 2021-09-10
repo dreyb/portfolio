@@ -18,58 +18,54 @@
 
 /*Background da main*/
 main {
-  background: url("../img/background.jpg") no-repeat center center;
+  background: url("../img/background.png") no-repeat center center;
   background-size: cover;
   height: 100vh;
 }
 
 /*Divs da home*/
-#textos-home {
+#home-text {
   width: 80%;
-  height: 400px;
+  height: 80vh;
   position: relative;
-  top: 150px;
-  left: 5%;
+  top: 15vh;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#textos-home div {
-  background-color: var(--cor-terciária);
-  width: 200px;
-  height: 300px;
-  border-radius: 20px;
-  box-shadow: 2px 2px 2px var(--sombra);
+#home-text div {
+  width: 220px;
+  height: 220px;
+  position: relative;
+  top: 29%;
+}
+
+#home-text div > h1 {
+  text-align: center;
   font-family: var(--fonte-1);
   color: var(--cor-principal);
 }
 
-#textos-home div > h1 {
-  text-align: center;
-  position: relative;
-  top: 20px;
-}
-
-#textos-home div > ul {
+#home-text div > ul {
+  font-family: var(--fonte-1);
   list-style: circle;
+  margin-top: 20px;
   margin-left: 25px;
-  font-size: 14px;
-  margin-top: 60px;
 }
 
-#textos-home div > img {
+#home-text div > img {
   position: relative;
-  left: 30%;
-  top: 10%;
+  left: 32%;
+  margin-top: 18px;
 }
 
-/*Responsividade dessas divs*/
-@media (max-width: 700px) {
-  #textos-home {
-    left: 0;
-    margin-right: auto;
+/*Responsividade das divs home*/
+@media (max-width: 999px) {
+  #home-text div {
     margin-left: auto;
-  }
-  #textos-home div {
     margin-right: auto;
-    margin-left: auto;
+    background-color: var(--cor-terciária);
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px var(--sombra);
   }
 }
