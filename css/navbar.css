@@ -1,0 +1,85 @@
+/*Importação das fontes*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/*Variáveis*/
+:root {
+  --cor-principal: #c5952a;
+  --cor-secundaria: black;
+  --cor-terciária: white;
+  --sombra: rgba(0, 0, 0, 0.199);
+  --fonte-1: "Roboto", sans-serif;
+}
+
+/*Configuração geral*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*Estilização da navbar*/
+a {
+  color: var(--cor-principal);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: var(--cor-secundaria);
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: var(--fonte-1);
+  background: var(--cor-terciária);
+  height: 8vh;
+  box-shadow: 2px 2px 2px var(--sombra);
+}
+
+#logo {
+  position: relative;
+  top: 3px;
+}
+
+#nav-list {
+  list-style: none;
+  display: flex;
+}
+
+#nav-list li {
+  margin-left: 32px;
+  text-transform: uppercase;
+}
+
+/*Hambúrguer*/
+#mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+#mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: var(--cor-principal);
+  margin: 8px;
+}
+
+/*Responsividade*/
+@media (max-width: 999px) {
+  #nav-list {
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 50vw;
+    height: 92vh;
+    background: var(--cor-terciária);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  #nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }
+}

@@ -1,0 +1,12 @@
+/*Configuração geral*/
+* {
+  margin: 0;
+  padding: 8;
+}
+
+/*Background da main*/
+main {
+  background: url("../img/background.jpg") no-repeat center center;
+  background-size: cover;
+  height: 92vh;
+}
